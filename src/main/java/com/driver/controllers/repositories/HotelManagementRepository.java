@@ -49,8 +49,8 @@ public class HotelManagementRepository {
     }
 
     public int bookARoom(Booking booking) {
-        if(!hotels.containsKey(booking.getHotelName()) || !users.containsKey(booking.getBookingAadharCard()))
-            return -1;
+//        if(!hotels.containsKey(booking.getHotelName()) || !users.containsKey(booking.getBookingAadharCard()))
+//            return -1;
 
         int bookingsTillNow = 0;
         for(Map.Entry<String, Booking> b: bookings.entrySet()) {
